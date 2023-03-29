@@ -1,0 +1,16 @@
+.cards{
+    border:1px solid rgb(33,37,41);
+    background-color: rgb(33,37,41);
+    width: 800px;
+    height: 600px;
+    border-radius: 40px;
+}
+
+.cards .para {
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
