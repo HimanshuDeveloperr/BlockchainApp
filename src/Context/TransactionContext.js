@@ -32,7 +32,7 @@ const createEthereumContract = () => {
 
     const [currentAccount,setCurrentAccount]=useState('')
     const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
-    const [transactions, setTransactions] = useState([]);
+    
 
 
     const handleChange = (e, name) => {
@@ -125,7 +125,7 @@ const createEthereumContract = () => {
  },[])
 
     return ( 
-        <TransactionContext.Provider value={[connectWallet,currentAccount,formData,setformData,handleChange,sendTransactions,isLoading]}>
+        <TransactionContext.Provider value={[connectWallet,currentAccount,formData,setformData,handleChange,sendTransactions,isLoading,transactionCount]}>
         {children}
       </TransactionContext.Provider>
     );

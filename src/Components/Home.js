@@ -5,7 +5,7 @@ import { TransactionContext } from '../Context/TransactionContext';
 import './Home.css';
 
 const Home = () => {
-  const [connectWallet, currentAccount, formData, setFormData, handleChange, sendTransactions] = useContext(
+  const [connectWallet, currentAccount, formData,  handleChange, sendTransactions] = useContext(
     TransactionContext
   );
 
